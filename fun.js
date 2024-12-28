@@ -19,6 +19,6 @@ console.log(vc);
 
  }
 
- k= sam(12,22,7);
+ ol= sam(12,22,7);
 
- console.log(k);
+ console.log(ol);
