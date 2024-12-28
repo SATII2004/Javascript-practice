@@ -15,11 +15,11 @@ arr.forEach(function(element)
     console.log(element);
 });
 
-//some extra variables
+
 let j=0;
 const m =19;
 
-console.log("------------------------------------------");
+console.log("-------------------------------------");
 
 
 while(j<arr.length)
@@ -29,9 +29,9 @@ while(j<arr.length)
     
 }
 
-console.log("------------------------------------------");
-j = 0; // Reset j to 0 to avoid index out-of-bounds errors
+console.log("----------------------------------------");
+j = 0; 
 do {
     console.log("HII " + arr[j]);
     j++;
-} while (j < arr.length); // Fixed condition to loop through the array
+} while (j < arr.length); 
