@@ -35,4 +35,4 @@ console.log(str.length);
 console.log(str.indexOf("bro"));
 console.log(str.slice(1,3));
 
-console.log(str.replace("Hii","Hello"));
+console.log(str.replace("Hii","Halo"));
