@@ -20,7 +20,7 @@ console.log(a==b);  // checks and returns true or false
 console.log(true && true);
 console.log(true && false);
 
-console.log(!false);
+console.log(!true);
 
 
 
