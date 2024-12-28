@@ -17,7 +17,7 @@ let arr=["Fan","Camera",34,null,true];
 console.log(newLen);
  console.log(arr);
 
- d=[1,4,6,43,23,34224];
+ d=[1,4,6,43,34224];
 
  console.log(d);
 
