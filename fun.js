@@ -6,7 +6,9 @@ function avg(a,b)
 
 var vc = avg(13,4);
 
+
 console.log(vc);
+
 
 
 
