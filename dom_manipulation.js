@@ -70,7 +70,7 @@ firstContainer.addEventListener('mouseover',function()
 firstContainer.addEventListener('click',function(){
     document.querySelectorAll('.container')[1].innerHTML  = "<b> We have Clicked </b>"
     console.log("Clicked on container");
-}) */
+}) 
 
 
 let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
@@ -87,3 +87,54 @@ firstContainer.addEventListener('mousedown',function(){
     document.querySelectorAll('.container')[1].innerHTML  = "<b> We have Clicked </b>"
     console.log("mouse down when Clicked on container");
 })
+
+
+
+
+
+// Arrow functions 
+
+logKaro = ()=>
+{
+    console.log("I am your log.");
+}
+
+
+
+let timeoutId = setTimeout(() => {
+    console.log("This will not run.");
+  }, 3000);
+  
+  clearTimeout(timeoutId); // Cancels the timeout
+  
+  let intervalId = setInterval(() => {
+    console.log("This will stop soon.");
+  }, 1000);
+  
+  setTimeout(() => {
+    clearInterval(intervalId); // Stops the interval after 5 seconds
+    console.log("Interval stopped.");
+  }, 9000);
+
+  
+
+  //JAVASCRIPT LOCAL STORAGE
+
+  
+  localStorage.setItem('name','SATISH');
+  localStorage.getItem('name');
+  localStorage.clear();
+
+  */
+
+//JSON(JAVASCRIPT OBJECT NOTATION)
+
+obj = {name: "Satish" , length:1 };
+
+jso =JSON.stringify(obj);
+
+console.log(typeof jso);
+console.log(jso);
+
+const parsed = JSON.parse('{"name":"satish","length":1,"a":{"this":"tha\\"t"}}');
+console.log(parsed);
