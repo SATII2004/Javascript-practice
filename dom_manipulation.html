@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM  Manipulation</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+        .text-success{
+            color: rgb(216, 245, 216);
+        }
+    </style>
 </head>
 <body>
     <h1>DOM MANIPULATION</h1><BR><BR>
-    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nostrum. Tenetur, veri
+    <div id="firstContainer" class="container">
+        <button id="click">Click Me</button>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nostrum. Tenetur, veri
             tatis! Autem nostrum repellat consequuntur eos ab repudiandae laboriosam illum quidem quibus
-            e minus? Adipisci, dolorem eos!
+            e minus? Adipisci, dolorem eos!</p>
     </div>
 
 
-    <div class="container">Lorem ipsum dolor, sit amet consectetur a
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur a
         dipisicing elit. Quisquam, culpa! Quasi debitis do
         lores quae, minima maxime distinctio dignissimos similiq
-        ue at ducimus mollitia exercitationem?
+        ue at ducimus mollitia exercitationem?</p>
     </div>
 
-    <button id="click">Click Me</button>
+    <script src="dom_manipulation.js"></script>
+ 
 
 </body>
 </html>
