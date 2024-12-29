@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+</head>
+<body>
+
+    <div class="container">
+        <button onclick="alert('hello');">Click Me</button>
+    </div>
+
+    <button id="myButton">Click Me</button>
+    <script>
+      const button = document.getElementById('myButton');
+      button.addEventListener('click', function(event) {
+        console.log("Event Type:", event.type); // Logs "click"
+        console.log("Target Element:", event.target); // Logs the button element
+      });
+    </script>
+    <div id="parent">
+        <button id="child">Click Me</button>
+      </div>
+      <script>
+        document.getElementById('parent').addEventListener('click', () => {
+          console.log("Parent clicked!");
+        });
+      
+        document.getElementById('child').addEventListener('click', (event) => {
+          console.log("Button clicked!");
+          event.stopPropagation(); // Prevents bubbling
+        });
+      </script>
+      
+
+    <script src="events.js" theme="blue"></script>
+</body>
+</html>
