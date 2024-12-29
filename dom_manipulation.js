@@ -38,3 +38,52 @@ console.log(document.title);
 
 sel= document.querySelector('.container');
 console.log(sel);
+
+
+
+
+// Events in JAVASCRIPT
+
+function clicked()
+{
+    console.log("The button was clicked.");
+}
+
+window.onload=function()
+{
+    console.log("The document was loaded!");
+
+}
+
+/* firstContainer.addEventListener('click',function()
+{
+    document.querySelectorAll('.container')[1].innerHTML= prevHTML;
+    console.log("Click hua");
+})
+
+
+firstContainer.addEventListener('mouseover',function()
+{
+    console.log("Mouse on container");
+})
+
+firstContainer.addEventListener('click',function(){
+    document.querySelectorAll('.container')[1].innerHTML  = "<b> We have Clicked </b>"
+    console.log("Clicked on container");
+}) */
+
+
+let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+firstContainer.addEventListener('mouseup',function()
+{
+    document.querySelectorAll('.container')[1].innerHTML= prevHTML;
+    console.log("Mouse up when clicked on Container.");
+})
+
+
+
+
+firstContainer.addEventListener('mousedown',function(){
+    document.querySelectorAll('.container')[1].innerHTML  = "<b> We have Clicked </b>"
+    console.log("mouse down when Clicked on container");
+})
