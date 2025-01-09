@@ -62,7 +62,7 @@ marr.map((value,index,array) =>{
 
 //Filter method
 
-let marr2 = [23,1,4,90,83,0,76]
+let marr2 = [23,1,4,90,83,0,76];
 let a2 = marr2.filter((value)=>{
     return value<10
 })
