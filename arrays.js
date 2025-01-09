@@ -67,7 +67,7 @@ let a2 = marr2.filter((value)=>{
     return value<10
 })
 
-console.log(a2)
+console.log(a2);
 
 
 //Reduce method
