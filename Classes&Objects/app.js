@@ -63,3 +63,44 @@ obj.stop();
 let mo = new Car("TOYOTA");
 console.log(`Brand: ${mo.brand}`);
 mo.start();
+
+
+
+
+
+
+
+//PROMISES
+
+let promise = new Promise(function(resolve,reject){
+    alert("I am ana alert in promise");
+    resolve(56);
+
+    //reject(new Error("I am ana error."));
+
+});
+
+
+console.log("Hello");
+setTimeout(function(){
+    console.log("Hello in 2 seconds");
+},2000);
+
+console.log("My name is "+ "Satish");
+console.log(promise);
+
+
+
+function task(message, delay) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log(message);
+            resolve();
+        }, delay);
+    });
+}
+
+// Chaining promises
+task('Task 1 completed', 1000)
+    .then(() => task('Task 2 completed', 2000))
+    .the
