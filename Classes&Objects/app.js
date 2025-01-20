@@ -14,7 +14,11 @@ const employee = {
 };
 
 const ram = {
+
     salary: 80000,
+    calcTax(){
+        console.log("Tax rate is 20%");
+    },
 };
 
 const ram2 = {
@@ -34,3 +38,28 @@ ram.__proto__ = employee;
 ram2.__proto__ = employee;
 ram3.__proto__ = employee;
 ram4.__proto__ = employee;
+
+
+
+class Car{
+    start(){
+        console.log("START");
+    }
+
+    stop(){
+        console.log("STOP");
+    }
+    constructor(brand){
+        console.log("Thid is a construuctor.");
+        this.brand=brand;
+    }
+
+}
+
+let obj = new Car();
+
+obj.stop();
+
+let mo = new Car("TOYOTA");
+console.log(`Brand: ${mo.brand}`);
+mo.start();
