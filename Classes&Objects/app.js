@@ -103,4 +103,4 @@ function task(message, delay) {
 // Chaining promises
 task('Task 1 completed', 1000)
     .then(() => task('Task 2 completed', 2000))
-    .the
+    
